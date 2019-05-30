@@ -56,7 +56,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       <label
         class="sc-bxivhb bwFbhW"
       >
-        Title Color
+        Title color
       </label>
       <input
         class="sc-bdVaJa eQjeEW"

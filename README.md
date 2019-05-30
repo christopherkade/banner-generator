@@ -1,5 +1,7 @@
 A web based [DEV](dev.to) banner generator.
 
+![screenshot](https://user-images.githubusercontent.com/15229355/58665557-6dc87280-8331-11e9-8113-25363965e2ad.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
