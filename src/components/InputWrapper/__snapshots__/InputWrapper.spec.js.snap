@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH jIEWCi"
+  >
+    <div
+      class="sc-htpNat klMPKP"
+    >
+      <label
+        class="sc-bxivhb bwFbhW"
+      >
+        Title
+      </label>
+      <input
+        class="sc-bdVaJa eQjeEW"
+        value="mockedTitle"
+      />
+    </div>
+    <div
+      class="sc-htpNat klMPKP"
+    >
+      <label
+        class="sc-bxivhb bwFbhW"
+      >
+        Title size (in 
+        <code>
+          rem
+        </code>
+        )
+      </label>
+      <input
+        class="sc-bdVaJa eQjeEW"
+        min="1"
+        type="number"
+        value="5"
+      />
+    </div>
+    <div
+      class="sc-htpNat klMPKP"
+    >
+      <label
+        class="sc-bxivhb bwFbhW"
+      >
+        Background color
+      </label>
+      <input
+        class="sc-bdVaJa eQjeEW"
+        value="black"
+      />
+    </div>
+    <div
+      class="sc-htpNat klMPKP"
+    >
+      <label
+        class="sc-bxivhb bwFbhW"
+      >
+        Title Color
+      </label>
+      <input
+        class="sc-bdVaJa eQjeEW"
+        value="white"
+      />
+    </div>
+    <div
+      class="sc-htpNat klMPKP"
+    >
+      <label
+        class="sc-bxivhb bwFbhW"
+      >
+        Borders
+      </label>
+      <input
+        class="sc-bdVaJa eQjeEW"
+        type="checkbox"
+        value="false"
+      />
+    </div>
+  </div>
+</div>
+`;

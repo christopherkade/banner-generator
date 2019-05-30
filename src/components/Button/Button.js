@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Button = styled.button`
+const Button = styled.a`
   padding: 0.1875rem 1rem;
   background-color: #66e2d5;
   font-size: 1rem;
@@ -8,6 +8,8 @@ const Button = styled.button`
   border-radius: 0.1875rem;
   margin: 0.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 
   &:hover {
     cursor: pointer;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Output /> Snapshots should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa cGgfyq"
+    id="capture"
+  >
+    <h1
+      class="sc-bwzfXH cTtmfd"
+      size="5"
+    >
+      mockedTitle
+    </h1>
+  </div>
+</div>
+`;

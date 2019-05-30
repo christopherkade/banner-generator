@@ -13,9 +13,9 @@ describe('<Button />', () => {
   });
 
   describe('children prop', () => {
-    it('should display Enter World as Button children', () => {
-      const { container } = render(<Button>Click me</Button>);
-      expect(container.querySelector('button').textContent).toBe('Click me');
+    it('should display Click me as Button children', () => {
+      const { getByText } = render(<Button>Click me</Button>);
+      expect(getByText("Click me").textContent).toBe('Click me');
     });
   });
 

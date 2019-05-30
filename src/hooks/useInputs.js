@@ -1,11 +1,19 @@
 import { useState } from "react"
 
+/**
+ * Handles our input states & updates
+ */
 const useInputs = () => {
-  const [bgColor, setBgColor] = useState("#BCE7FD")
-  const [title, setTitle] = useState("My article's title")
+  const [bgColor, setBgColor] = useState("black")
+  const [title, setTitle] = useState("Hello DEV 🎉  ")
+  const [titleSize, setTitleSize] = useState("5")
   const [titleColor, setTitleColor] = useState("white")
+  const [hasBorder, setHasBorder] = useState(true)
 
-  return [{ bgColor, title, titleColor }, { setBgColor, setTitle, setTitleColor }]
+  return [
+    { bgColor, title, titleSize, titleColor, hasBorder },
+    { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder }
+  ]
 }
 
 export default useInputs

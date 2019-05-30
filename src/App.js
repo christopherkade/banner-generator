@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from "styled-components"
 import html2canvas from "html2canvas"
 
 import useInputs from "hooks/useInputs"
-import { InputWrapper } from "components/Molecules/InputWrapper"
-import { Output } from "components/Atoms/Output"
-import { Title } from "components/Atoms/Title"
-import { DevIcon } from "components/Atoms/DevIcon"
-import { Button } from "components/Atoms/Button"
+import { InputWrapper } from "components/InputWrapper"
+import { Output } from "components/Output"
+import { Title } from "components/Title"
+import { DevIcon } from "components/DevIcon"
+import { Button } from "components/Button"
 
 const Wrapper = styled.div`
   text-align: center;
@@ -23,14 +23,14 @@ const GeneratorWrapper = styled.div`
 
 const App = () => {
   const [values, setters] = useInputs()
+  const [imgURL, setImgURL] = useState("#")
 
-  const handleGeneration = () => {
+  useEffect(() => {
+    // TODO: Make the image's size 1000x420
     html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.body.appendChild(canvas)
-      // TODO: Convert canvas to PNG/JPG and upload it to a CDN
-      // https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf
+      setImgURL(canvas.toDataURL('image/jpg'))
     });
-  }
+  }, [values])
 
   return (
     <Wrapper>
@@ -41,7 +41,7 @@ const App = () => {
       <GeneratorWrapper>
         <Output values={values} />
         <InputWrapper values={values} setters={setters} />
-        <Button onClick={handleGeneration}>GENERATE BANNER</Button>
+        <Button href={imgURL} download="banner.jpg">GENERATE BANNER</Button>
       </GeneratorWrapper>
     </Wrapper>
   );
