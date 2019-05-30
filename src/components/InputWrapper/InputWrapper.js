@@ -40,7 +40,7 @@ const InputWrapper = ({ values, setters }) => {
         <Input value={bgColor} onChange={(e) => setBgColor(e.target.value)} />
       </InputBlock>
       <InputBlock>
-        <Label>Title Color</Label>
+        <Label>Title color</Label>
         <Input value={titleColor} onChange={(e) => setTitleColor(e.target.value)} />
       </InputBlock>
       <InputBlock>
