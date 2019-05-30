@@ -13,6 +13,11 @@ const Wrapper = styled.div`
   padding: 4rem;
   border: 1px solid #dbdbdb;
   border: ${ (props) => props.hasBorder ? "0.625rem solid white" : "0.625rem solid transparent"};
+
+  @media (max-width: 1200px) {
+    width: auto;
+    height: auto;
+  }
 `
 
 const Title = styled.h1`

@@ -6,6 +6,10 @@ import { Input } from "components/Input"
 
 const Wrapper = styled.div`
   display: flex;
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `
 
 const InputBlock = styled.div`
@@ -13,6 +17,11 @@ const InputBlock = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: 1rem;
+
+  @media (max-width: 769px) {
+    width: 100%;
+    align-items: center;
+  }
 `
 
 const Label = styled.label`
