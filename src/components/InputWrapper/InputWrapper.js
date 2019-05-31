@@ -38,8 +38,8 @@ const RowLabel = styled.label`
 `
 
 const InputWrapper = ({ values, setters }) => {
-  const { bgColor, title, titleSize, titleColor, hasBorder } = values
-  const { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder } = setters
+  const { bgColor, title, titleSize, titleColor, hasBorder, borderColor } = values
+  const { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder, setBorderColor } = setters
 
   return (
     <Wrapper>
@@ -59,6 +59,10 @@ const InputWrapper = ({ values, setters }) => {
         <Label>Title color</Label>
         <Input value={titleColor} onChange={(e) => setTitleColor(e.target.value)} />
       </InputBlock>
+      <InputBlock>
+        <Label>Border color</Label>
+        <Input value={borderColor} onChange={(e) => setBorderColor(e.target.value)} />
+      </InputBlock>
       <InputBlock isRow={true}>
         <RowLabel>Borders</RowLabel>
         <Input type="checkbox" value={hasBorder} checked={hasBorder} onChange={(e) => setHasBorder(e.target.checked)} />
@@ -73,14 +77,16 @@ InputWrapper.propTypes = {
     title: PropTypes.string,
     titleSize: PropTypes.string,
     titleColor: PropTypes.string,
-    hasBorder: PropTypes.bool
+    hasBorder: PropTypes.bool,
+    borderColor: PropTypes.string
   }).isRequired,
   setters: PropTypes.shape({
     setBgColor: PropTypes.func,
     setTitle: PropTypes.func,
     setTitleSize: PropTypes.func,
     setTitleColor: PropTypes.func,
-    setHasBorder: PropTypes.func
+    setHasBorder: PropTypes.func,
+    setBorderColor: PropTypes.func
   }).isRequired
 }
 

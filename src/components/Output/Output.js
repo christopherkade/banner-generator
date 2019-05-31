@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   align-items: center;
   color: ${(props) => props.titleColor};
   border: 1px solid #dbdbdb;
-  border: ${(props) => props.hasBorder ? "0.625rem solid white" : "0.625rem solid transparent"};
+  border: ${(props) => props.hasBorder ? `0.625rem solid ${props.borderColor}` : "0.625rem solid transparent"};
 
   @media (max-width: 1200px) {
     width: auto;
@@ -27,10 +27,10 @@ const Title = styled.h1`
 `
 
 const Output = ({ values }) => {
-  const { bgColor, title, titleSize, titleColor, hasBorder } = values
+  const { bgColor, title, titleSize, titleColor, hasBorder, borderColor } = values
 
   return (
-    <Wrapper bgColor={bgColor} titleColor={titleColor} hasBorder={hasBorder} id="capture">
+    <Wrapper bgColor={bgColor} titleColor={titleColor} hasBorder={hasBorder} borderColor={borderColor} id="capture">
       <Title size={titleSize}>{title}</Title>
     </Wrapper>
   )
@@ -42,7 +42,8 @@ Output.propTypes = {
     title: PropTypes.string,
     titleSize: PropTypes.string,
     titleColor: PropTypes.string,
-    hasBorder: PropTypes.bool
+    hasBorder: PropTypes.bool,
+    borderColor: PropTypes.string
   }).isRequired
 }
 

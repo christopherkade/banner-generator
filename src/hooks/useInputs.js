@@ -9,10 +9,11 @@ const useInputs = () => {
   const [titleSize, setTitleSize] = useState("5")
   const [titleColor, setTitleColor] = useState("white")
   const [hasBorder, setHasBorder] = useState(true)
+  const [borderColor, setBorderColor] = useState("white")
 
   return [
-    { bgColor, title, titleSize, titleColor, hasBorder },
-    { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder }
+    { bgColor, title, titleSize, titleColor, hasBorder, borderColor },
+    { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder, setBorderColor }
   ]
 }
 
