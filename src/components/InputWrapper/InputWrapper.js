@@ -14,8 +14,9 @@ const Wrapper = styled.div`
 
 const InputBlock = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: ${ (props) => props.isRow ? "row" : "column"};
+  align-items: ${ (props) => props.isRow ? "center" : "flex-start"};
+  justify-content: center;
   margin: 1rem;
 
   @media (max-width: 769px) {
@@ -27,6 +28,12 @@ const InputBlock = styled.div`
 const Label = styled.label`
   font-weight: 300;
   margin-bottom: 0.2rem;
+  font-size: 0.75rem;
+`
+
+const RowLabel = styled.label`
+  font-weight: 300;
+  margin-right: 0.2rem;
   font-size: 0.75rem;
 `
 
@@ -52,8 +59,8 @@ const InputWrapper = ({ values, setters }) => {
         <Label>Title color</Label>
         <Input value={titleColor} onChange={(e) => setTitleColor(e.target.value)} />
       </InputBlock>
-      <InputBlock>
-        <Label>Borders</Label>
+      <InputBlock isRow={true}>
+        <RowLabel>Borders</RowLabel>
         <Input type="checkbox" value={hasBorder} checked={hasBorder} onChange={(e) => setHasBorder(e.target.checked)} />
       </InputBlock>
     </Wrapper>

@@ -6,7 +6,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
     class="sc-bwzfXH kyLvdF"
   >
     <div
-      class="sc-htpNat ejfolm"
+      class="sc-htpNat iCMJmf"
     >
       <label
         class="sc-bxivhb bwFbhW"
@@ -19,7 +19,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-htpNat ejfolm"
+      class="sc-htpNat iCMJmf"
     >
       <label
         class="sc-bxivhb bwFbhW"
@@ -38,7 +38,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-htpNat ejfolm"
+      class="sc-htpNat iCMJmf"
     >
       <label
         class="sc-bxivhb bwFbhW"
@@ -51,7 +51,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-htpNat ejfolm"
+      class="sc-htpNat iCMJmf"
     >
       <label
         class="sc-bxivhb bwFbhW"
@@ -64,10 +64,10 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-htpNat ejfolm"
+      class="sc-htpNat bmlVCj"
     >
       <label
-        class="sc-bxivhb bwFbhW"
+        class="sc-ifAKCX gtlWkE"
       >
         Borders
       </label>
