@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: ${ (props) => props.titleColor};
-  padding: 4rem;
   border: 1px solid #dbdbdb;
   border: ${ (props) => props.hasBorder ? "0.625rem solid white" : "0.625rem solid transparent"};
 
