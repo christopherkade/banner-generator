@@ -28,8 +28,11 @@ const App = () => {
   const [imgURL, setImgURL] = useState("#")
 
   useEffect(() => {
-    // TODO: Make the image's size 1000x420
-    html2canvas(document.querySelector("#capture")).then(canvas => {
+    html2canvas(document.getElementById("capture"), {
+      width: 1010,
+      height: 420,
+      scale: 1
+    }).then(canvas => {
       setImgURL(canvas.toDataURL('image/jpg'))
     });
   }, [values])

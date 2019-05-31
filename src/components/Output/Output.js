@@ -3,15 +3,17 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  width: 1000px;
-  height: 420px;
-  background-color: ${ (props) => props.bgColor};
+  width: 990px;
+  height: 400px;
+  min-height: 400px;
+  min-width: 990px;
+  background-color: ${(props) => props.bgColor};
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${ (props) => props.titleColor};
+  color: ${(props) => props.titleColor};
   border: 1px solid #dbdbdb;
-  border: ${ (props) => props.hasBorder ? "0.625rem solid white" : "0.625rem solid transparent"};
+  border: ${(props) => props.hasBorder ? "0.625rem solid white" : "0.625rem solid transparent"};
 
   @media (max-width: 1200px) {
     width: auto;
