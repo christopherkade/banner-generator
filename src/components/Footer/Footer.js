@@ -5,7 +5,11 @@ const Wrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 10rem;
+
+  @media (max-width: 1281px) {
+    margin-top: 5rem;
+  }
 `
 
 const Text = styled.p`

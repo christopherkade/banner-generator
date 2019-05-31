@@ -7,6 +7,10 @@ const Title = styled.h1`
   justify-content: center;
   margin: 0;
   padding: 1rem;
+
+  @media (max-width: 769px) {
+    font-size: 1rem;
+  }
 `
 
 export default Title
