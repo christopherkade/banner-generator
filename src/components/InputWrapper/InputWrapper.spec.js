@@ -9,7 +9,8 @@ describe("<InputWrappr />", () => {
     title: "mockedTitle",
     titleSize: "5",
     titleColor: "white",
-    hasBorder: false
+    hasBorder: false,
+    borderColor: "white"
   }
 
   const setters = {
@@ -17,7 +18,8 @@ describe("<InputWrappr />", () => {
     setTitle: () => { },
     setTitleSize: () => { },
     setTitleColor: () => { },
-    setHasBorder: () => { }
+    setHasBorder: () => { },
+    setBorderColor: () => { }
   }
 
   describe("Snapshots", () => {

@@ -9,7 +9,8 @@ describe("<Output />", () => {
     title: "mockedTitle",
     titleSize: "5",
     titleColor: "white",
-    hasBorder: false
+    hasBorder: false,
+    borderColor: "white"
   }
 
   describe("Snapshots", () => {
