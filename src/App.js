@@ -8,6 +8,8 @@ import { Output } from "components/Output"
 import { Title } from "components/Title"
 import { DevIcon } from "components/DevIcon"
 import { Button } from "components/Button"
+import { GithubLink } from "components/GithubLink"
+import { Footer } from "components/Footer"
 
 const Wrapper = styled.div`
   text-align: center;
@@ -34,6 +36,7 @@ const App = () => {
 
   return (
     <Wrapper>
+      <GithubLink />
       <Title>
         <DevIcon />
         &nbsp; banner generator
@@ -43,6 +46,7 @@ const App = () => {
         <InputWrapper values={values} setters={setters} />
         <Button href={imgURL} download="banner.jpg">GENERATE BANNER</Button>
       </GeneratorWrapper>
+      <Footer />
     </Wrapper>
   );
 }
