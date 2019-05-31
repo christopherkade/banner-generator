@@ -5,6 +5,7 @@
   "dependencies": {
     "html2canvas": "^1.0.0-rc.3",
     "react": "^16.8.6",
+    "react-color": "^2.17.3",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "react-testing-library": "^7.0.1",

@@ -1,11 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import { ChromePicker } from 'react-color'
 
 import { Input } from "components/Input"
 
+
 const Wrapper = styled.div`
   display: flex;
+  justify-content:top;
 
   @media (max-width: 1200px) {
     flex-wrap: wrap;
@@ -37,9 +40,13 @@ const RowLabel = styled.label`
   font-size: 0.75rem;
 `
 
+
+
 const InputWrapper = ({ values, setters }) => {
   const { bgColor, title, titleSize, titleColor, hasBorder } = values
   const { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder } = setters
+
+ 
 
   return (
     <Wrapper>
@@ -53,11 +60,11 @@ const InputWrapper = ({ values, setters }) => {
       </InputBlock>
       <InputBlock>
         <Label>Background color</Label>
-        <Input value={bgColor} onChange={(e) => setBgColor(e.target.value)} />
+        <ChromePicker color={bgColor} onChange={(c,e)=> setBgColor(c.hex)}/>
       </InputBlock>
       <InputBlock>
         <Label>Title color</Label>
-        <Input value={titleColor} onChange={(e) => setTitleColor(e.target.value)} />
+        <ChromePicker color={titleColor} onChange={(c,e)=> setTitleColor(c.hex)}/>
       </InputBlock>
       <InputBlock isRow={true}>
         <RowLabel>Borders</RowLabel>
