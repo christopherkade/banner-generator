@@ -10,4 +10,11 @@ describe("<Title />", () => {
       expect(container).toMatchSnapshot();
     });
   })
+
+  describe("children prop", () => {
+    it("should display the children prop", () => {
+      const { container } = render(<Title>Display me !</Title>)
+      expect(container.textContent).toBe("Display me !")
+    })
+  })
 })

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Button = styled.a`
+const LinkButton = styled.a`
   padding: 0.1875rem 1rem;
   background-color: #66e2d5;
   font-size: 1rem;
@@ -10,8 +10,6 @@ const Button = styled.a`
   font-weight: bold;
   text-decoration: none;
   color: black;
-  position: absolute;
-  left: 0.625rem;
 
   &:hover {
     cursor: pointer;
@@ -23,4 +21,4 @@ const Button = styled.a`
   }
 `
 
-export default Button
+export default LinkButton

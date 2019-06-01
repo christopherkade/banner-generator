@@ -14,8 +14,15 @@ describe("<Output />", () => {
 
   describe("Snapshots", () => {
     it("should match snapshot", () => {
-      const { container } = render(<Output values={values}/>);
+      const { container } = render(<Output values={values} />);
       expect(container).toMatchSnapshot();
     });
+  })
+
+  describe("title prop", () => {
+    it("should display the title passed as prop", () => {
+      const { container } = render(<Output values={values} />)
+      expect(container.textContent).toContain("mockedTitle")
+    })
   })
 })
