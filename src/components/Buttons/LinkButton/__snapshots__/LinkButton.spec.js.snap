@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkButton /> Snapshots should match snapshot 1`] = `
+<div>
+  <a
+    class="sc-bdVaJa gHighK"
+  >
+    Click me
+  </a>
+</div>
+`;

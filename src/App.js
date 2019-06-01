@@ -7,7 +7,8 @@ import { InputWrapper } from "components/InputWrapper"
 import { Output } from "components/Output"
 import { Title } from "components/Title"
 import { DevIcon } from "components/DevIcon"
-import { Button } from "components/Button"
+import { Button } from "components/Buttons/Button"
+import { LinkButton } from "components/Buttons/LinkButton"
 import { GithubLink } from "components/GithubLink"
 
 const Wrapper = styled.div`
@@ -33,6 +34,8 @@ const GeneratorWrapper = styled.div`
 const ActionWrapper = styled.div`
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 `
 
 const App = () => {
@@ -67,7 +70,8 @@ const App = () => {
           <Output values={values} />
           <ActionWrapper>
             <InputWrapper values={values} setters={setters} />
-            <Button href={imgURL} download="banner.jpeg">GENERATE BANNER</Button>
+            <Button onClick={setters.randomizeInputs}>RANDOMISE</Button>
+            <LinkButton href={imgURL} download="banner.jpeg">GENERATE BANNER</LinkButton>
           </ActionWrapper>
         </GeneratorWrapper>
       </Wrapper>

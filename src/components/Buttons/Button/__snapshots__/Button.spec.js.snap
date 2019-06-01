@@ -2,10 +2,10 @@
 
 exports[`<Button /> Snapshots should match snapshot 1`] = `
 <div>
-  <a
-    class="sc-bdVaJa bDCsfx"
+  <button
+    class="sc-bdVaJa eygrDj"
   >
     Click me
-  </a>
+  </button>
 </div>
 `;
