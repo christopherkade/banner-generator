@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  width: 990px;
-  height: 400px;
+  width: 1000px;
+  height: 420px;
   background-color: ${(props) => props.bgColor};
   display: flex;
   justify-content: center;

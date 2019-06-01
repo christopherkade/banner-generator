@@ -28,12 +28,18 @@ const App = () => {
   const [imgURL, setImgURL] = useState("#")
 
   useEffect(() => {
-    html2canvas(document.getElementById("capture"), {
-      width: 1010,
-      height: 420,
+    const output = document.getElementById("capture")
+    html2canvas(output, {
+      // Work around
+      // Find a way to have a fixed 1000x420 size without croping out borders or starting with a 10px offset
+      // Certainly related to html2canvas
+      width: 1015,
+      height: 440,
+      x: output.offsetLeft + 10,
+      y: output.offsetTop,
       scale: 1
     }).then(canvas => {
-      setImgURL(canvas.toDataURL('image/jpg'))
+      setImgURL(canvas.toDataURL('image/jpeg'))
     });
   }, [values])
 
@@ -47,7 +53,7 @@ const App = () => {
       <GeneratorWrapper>
         <Output values={values} />
         <InputWrapper values={values} setters={setters} />
-        <Button href={imgURL} download="banner.jpg">GENERATE BANNER</Button>
+        <Button href={imgURL} download="banner.jpeg">GENERATE BANNER</Button>
       </GeneratorWrapper>
       <Footer />
     </Wrapper>
