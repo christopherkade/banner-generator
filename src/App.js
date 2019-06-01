@@ -33,7 +33,7 @@ const App = () => {
       height: 420,
       scale: 1
     }).then(canvas => {
-      setImgURL(canvas.toDataURL('image/jpg'))
+      setImgURL(canvas.toDataURL('image/jpeg'))
     });
   }, [values])
 
