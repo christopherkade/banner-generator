@@ -71,7 +71,7 @@ const App = () => {
           <ActionWrapper>
             <InputWrapper values={values} setters={setters} />
             <Button onClick={setters.randomizeInputs}>RANDOMISE</Button>
-            <LinkButton href={imgURL} download="banner.jpeg">GENERATE BANNER</LinkButton>
+            <LinkButton href={imgURL} download="banner.jpeg">DOWNLOAD BANNER</LinkButton>
           </ActionWrapper>
         </GeneratorWrapper>
       </Wrapper>
