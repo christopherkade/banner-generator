@@ -10,6 +10,8 @@ const Button = styled.a`
   font-weight: bold;
   text-decoration: none;
   color: black;
+  position: absolute;
+  left: 0.625rem;
 
   &:hover {
     cursor: pointer;

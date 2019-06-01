@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { TwitterPicker } from "react-color"
+import { CompactPicker } from "react-color"
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor }) => {
     <Wrapper>
       <InputBlock>
         <Label>Background color</Label>
-        <TwitterPicker
+        <CompactPicker
           triangle="hide"
           color={bgColor}
           onChangeComplete={(color) => setBgColor(color.hex)}
@@ -42,7 +42,7 @@ const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor }) => {
       </InputBlock>
       <InputBlock>
         <Label>Title color</Label>
-        <TwitterPicker
+        <CompactPicker
           triangle="hide"
           color={titleColor}
           onChangeComplete={(color) => setTitleColor(color.hex)}

@@ -9,10 +9,31 @@ import { MiscInput } from "components/InputWrapper/MiscInput"
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
 
   @media (max-width: 1200px) {
     flex-wrap: wrap;
     justify-content: center;
+  }
+`
+
+const Detail = styled.details`
+  margin-left: 1rem;
+
+`
+
+const Summary = styled.summary`
+  text-align: left;
+  font-size: 2rem;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: transparent;
   }
 `
 
@@ -22,13 +43,25 @@ const InputWrapper = ({ values, setters }) => {
 
   return (
     <Wrapper>
-      <ContentInput title={title} setTitle={setTitle} />
-      <ColorInput
-        bgColor={bgColor} setBgColor={setBgColor}
-        titleColor={titleColor} setTitleColor={setTitleColor}
-      />
-      <SizeInput titleSize={titleSize} setTitleSize={setTitleSize} />
-      <MiscInput hasBorder={hasBorder} setHasBorder={setHasBorder} />
+      <Detail open>
+        <Summary>Content</Summary>
+        <ContentInput title={title} setTitle={setTitle} />
+      </Detail>
+      <Detail>
+        <Summary>Colors</Summary>
+        <ColorInput
+          bgColor={bgColor} setBgColor={setBgColor}
+          titleColor={titleColor} setTitleColor={setTitleColor}
+        />
+      </Detail>
+      <Detail>
+        <Summary>Sizes</Summary>
+        <SizeInput titleSize={titleSize} setTitleSize={setTitleSize} />
+      </Detail>
+      <Detail>
+        <Summary>Miscellaneous</Summary>
+        <MiscInput hasBorder={hasBorder} setHasBorder={setHasBorder} />
+      </Detail>
     </Wrapper>
   )
 }

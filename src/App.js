@@ -9,17 +9,29 @@ import { Title } from "components/Title"
 import { DevIcon } from "components/DevIcon"
 import { Button } from "components/Button"
 import { GithubLink } from "components/GithubLink"
-import { Footer } from "components/Footer"
 
 const Wrapper = styled.div`
   text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 
 const GeneratorWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8rem;
+
+  @media (max-width: 769px) {
+    flex-direction: column;
+  }
+`
+
+const ActionWrapper = styled.div`
+  position: relative;
   height: 100%;
 `
 
@@ -35,7 +47,7 @@ const App = () => {
       // Certainly related to html2canvas
       width: 1015,
       height: 440,
-      x: output.offsetLeft + 10,
+      x: output.offsetLeft + 2,
       y: output.offsetTop,
       scale: 1
     }).then(canvas => {
@@ -44,19 +56,22 @@ const App = () => {
   }, [values])
 
   return (
-    <Wrapper>
+    <>
       <GithubLink />
-      <Title>
-        <DevIcon />
-        &nbsp; banner generator
-      </Title>
-      <GeneratorWrapper>
-        <Output values={values} />
-        <InputWrapper values={values} setters={setters} />
-        <Button href={imgURL} download="banner.jpeg">GENERATE BANNER</Button>
-      </GeneratorWrapper>
-      <Footer />
-    </Wrapper>
+      <Wrapper>
+        <Title>
+          <DevIcon />
+          &nbsp; banner generator
+        </Title>
+        <GeneratorWrapper>
+          <Output values={values} />
+          <ActionWrapper>
+            <InputWrapper values={values} setters={setters} />
+            <Button href={imgURL} download="banner.jpeg">GENERATE BANNER</Button>
+          </ActionWrapper>
+        </GeneratorWrapper>
+      </Wrapper>
+    </>
   );
 }
 

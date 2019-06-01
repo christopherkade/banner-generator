@@ -3,7 +3,7 @@
 exports[`<Button /> Snapshots should match snapshot 1`] = `
 <div>
   <a
-    class="sc-bdVaJa gHighK"
+    class="sc-bdVaJa bDCsfx"
   >
     Click me
   </a>

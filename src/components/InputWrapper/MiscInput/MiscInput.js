@@ -7,7 +7,6 @@ const InputBlock = styled.div`
   display: flex;
   flex-direction: ${ (props) => props.isRow ? "row" : "column"};
   align-items: ${ (props) => props.isRow ? "center" : "flex-start"};
-  justify-content: center;
   margin: 1rem;
 
   @media (max-width: 769px) {
@@ -19,7 +18,6 @@ const InputBlock = styled.div`
 const RowLabel = styled.label`
   font-weight: 300;
   margin-right: 0.2rem;
-  font-size: 0.7zrem;
 `
 
 const MiscInput = ({ hasBorder, setHasBorder }) => {
