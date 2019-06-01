@@ -3,13 +3,13 @@
 exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
 <div>
   <div
-    class="sc-bwzfXH kyLvdF"
+    class="sc-iwsKbI ihubdr"
   >
     <div
-      class="sc-htpNat iCMJmf"
+      class="sc-bwzfXH laROQs"
     >
       <label
-        class="sc-bxivhb bwFbhW"
+        class="sc-htpNat jkHTnt"
       >
         Title
       </label>
@@ -19,10 +19,236 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-htpNat iCMJmf"
+      class="sc-bxivhb gVZxhX"
+    >
+      <div
+        class="sc-ifAKCX gYYZib"
+      >
+        <label
+          class="sc-EHOje gZHeuX"
+        >
+          Background color
+        </label>
+        <div
+          class="twitter-picker "
+          style="width: 276px; background: rgb(255, 255, 255); box-shadow: 0 1px 4px rgba(0,0,0,0.25); border-radius: 4px; position: relative;"
+        >
+          <div
+            style="width: 0px; height: 0px; border-style: solid; border-width: 0px 9px 10px 9px; position: absolute; display: none;"
+          />
+          <div
+            style="width: 0px; height: 0px; border-style: solid; border-width: 0px 9px 10px 9px; border-color: transparent transparent #fff transparent; position: absolute; display: none;"
+          />
+          <div
+            style="padding: 15px 9px 9px 15px;"
+          >
+            <span>
+              <div
+                style="background: rgb(255, 105, 0); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#FF6900"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(252, 185, 0); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#FCB900"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(123, 220, 181); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#7BDCB5"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(0, 208, 132); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#00D084"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(142, 209, 252); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#8ED1FC"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(6, 147, 227); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#0693E3"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(171, 184, 195); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#ABB8C3"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(235, 20, 76); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#EB144C"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(247, 141, 167); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#F78DA7"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(153, 0, 239); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#9900EF"
+              />
+            </span>
+            <div
+              style="background: rgb(240, 240, 240); height: 30px; width: 30px; border-radius: 4px 0 0 4px; float: left; color: rgb(152, 161, 164); display: flex; align-items: center; justify-content: center;"
+            >
+              #
+            </div>
+            <div
+              style="position: relative;"
+            >
+              <input
+                spellcheck="false"
+                style="width: 100px; font-size: 14px; color: rgb(102, 102, 102); border: 0px; outline: none; height: 28px; box-shadow: inset 0 0 0 1px #F0F0F0; box-sizing: content-box; border-radius: 0 4px 4px 0; float: left; padding-left: 8px;"
+                value="000000"
+              />
+            </div>
+            <div
+              style="clear: both;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-ifAKCX gYYZib"
+      >
+        <label
+          class="sc-EHOje gZHeuX"
+        >
+          Title color
+        </label>
+        <div
+          class="twitter-picker "
+          style="width: 276px; background: rgb(255, 255, 255); box-shadow: 0 1px 4px rgba(0,0,0,0.25); border-radius: 4px; position: relative;"
+        >
+          <div
+            style="width: 0px; height: 0px; border-style: solid; border-width: 0px 9px 10px 9px; position: absolute; display: none;"
+          />
+          <div
+            style="width: 0px; height: 0px; border-style: solid; border-width: 0px 9px 10px 9px; border-color: transparent transparent #fff transparent; position: absolute; display: none;"
+          />
+          <div
+            style="padding: 15px 9px 9px 15px;"
+          >
+            <span>
+              <div
+                style="background: rgb(255, 105, 0); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#FF6900"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(252, 185, 0); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#FCB900"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(123, 220, 181); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#7BDCB5"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(0, 208, 132); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#00D084"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(142, 209, 252); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#8ED1FC"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(6, 147, 227); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#0693E3"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(171, 184, 195); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#ABB8C3"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(235, 20, 76); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#EB144C"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(247, 141, 167); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#F78DA7"
+              />
+            </span>
+            <span>
+              <div
+                style="background: rgb(153, 0, 239); height: 30px; width: 30px; cursor: pointer; position: relative; outline: none; float: left; border-radius: 4px; margin: 0px 6px 6px 0px;"
+                tabindex="0"
+                title="#9900EF"
+              />
+            </span>
+            <div
+              style="background: rgb(240, 240, 240); height: 30px; width: 30px; border-radius: 4px 0 0 4px; float: left; color: rgb(152, 161, 164); display: flex; align-items: center; justify-content: center;"
+            >
+              #
+            </div>
+            <div
+              style="position: relative;"
+            >
+              <input
+                spellcheck="false"
+                style="width: 100px; font-size: 14px; color: rgb(102, 102, 102); border: 0px; outline: none; height: 28px; box-shadow: inset 0 0 0 1px #F0F0F0; box-sizing: content-box; border-radius: 0 4px 4px 0; float: left; padding-left: 8px;"
+                value="FFFFFF"
+              />
+            </div>
+            <div
+              style="clear: both;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-bZQynM gfDHHn"
     >
       <label
-        class="sc-bxivhb bwFbhW"
+        class="sc-gzVnrw ihyYso"
       >
         Title size (in 
         <code>
@@ -38,36 +264,10 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       />
     </div>
     <div
-      class="sc-htpNat iCMJmf"
+      class="sc-htoDjs jYwHXb"
     >
       <label
-        class="sc-bxivhb bwFbhW"
-      >
-        Background color
-      </label>
-      <input
-        class="sc-bdVaJa eQjeEW"
-        value="black"
-      />
-    </div>
-    <div
-      class="sc-htpNat iCMJmf"
-    >
-      <label
-        class="sc-bxivhb bwFbhW"
-      >
-        Title color
-      </label>
-      <input
-        class="sc-bdVaJa eQjeEW"
-        value="white"
-      />
-    </div>
-    <div
-      class="sc-htpNat bmlVCj"
-    >
-      <label
-        class="sc-ifAKCX gtlWkE"
+        class="sc-dnqmqq hdGYjP"
       >
         Borders
       </label>

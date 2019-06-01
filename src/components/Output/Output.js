@@ -5,8 +5,6 @@ import styled from "styled-components"
 const Wrapper = styled.div`
   width: 990px;
   height: 400px;
-  min-height: 400px;
-  min-width: 990px;
   background-color: ${(props) => props.bgColor};
   display: flex;
   justify-content: center;
