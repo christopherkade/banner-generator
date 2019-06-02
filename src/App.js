@@ -42,6 +42,11 @@ const App = () => {
   const [values, setters] = useInputs()
   const [imgURL, setImgURL] = useState("#")
 
+  /**
+   * Called when the user updates the banner
+   * Renders the output as a canvas with html2canvas
+   * Transforms the canvas to a data URI, and save it for later download
+   */
   useEffect(() => {
     const output = document.getElementById("capture")
     html2canvas(output, {
@@ -54,7 +59,7 @@ const App = () => {
       y: output.offsetTop,
       scale: 1
     }).then(canvas => {
-      setImgURL(canvas.toDataURL('image/jpeg'))
+      setImgURL(canvas.toDataURL('image/png'))
     });
   }, [values])
 
@@ -70,8 +75,12 @@ const App = () => {
           <Output values={values} />
           <ActionWrapper>
             <InputWrapper values={values} setters={setters} />
-            <Button onClick={setters.randomizeInputs}>RANDOMISE</Button>
-            <LinkButton href={imgURL} download="banner.jpeg">DOWNLOAD BANNER</LinkButton>
+            <Button onClick={setters.randomizeInputs}>
+              RANDOMISE
+            </Button>
+            <LinkButton href={imgURL} download="banner.png">
+              DOWNLOAD BANNER
+            </LinkButton>
           </ActionWrapper>
         </GeneratorWrapper>
       </Wrapper>

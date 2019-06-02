@@ -6,7 +6,7 @@
 
 A web based [DEV](dev.to) banner generator.
 
-![screenshot](https://user-images.githubusercontent.com/15229355/58665557-6dc87280-8331-11e9-8113-25363965e2ad.png)
+![screenshot](https://user-images.githubusercontent.com/15229355/58760902-6cb86080-853e-11e9-91e2-afb66f77e8cb.png)
 
 ## Available Scripts
 
