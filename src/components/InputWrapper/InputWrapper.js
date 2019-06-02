@@ -10,7 +10,6 @@ import { MiscInput } from "components/InputWrapper/MiscInput"
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
 
   @media (max-width: 1200px) {
     flex-wrap: wrap;
@@ -20,7 +19,6 @@ const Wrapper = styled.div`
 
 const Detail = styled.details`
   margin-left: 1rem;
-
 `
 
 const Summary = styled.summary`

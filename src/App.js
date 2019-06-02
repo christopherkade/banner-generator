@@ -28,6 +28,7 @@ const GeneratorWrapper = styled.div`
 
   @media (max-width: 769px) {
     flex-direction: column;
+    margin-bottom: 0;
   }
 `
 

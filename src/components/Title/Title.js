@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 const Title = styled.h1`
+  position: absolute;
+  top: 0;
   font-weight: 300;
   display: flex;
   align-items: center;

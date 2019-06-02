@@ -3,10 +3,10 @@
 exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
 <div>
   <div
-    class="sc-iwsKbI dXxZAT"
+    class="sc-iwsKbI jwlGMD"
   >
     <details
-      class="sc-gZMcBi gBLcIm"
+      class="sc-gZMcBi cpuhBd"
       open=""
     >
       <summary
@@ -29,7 +29,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-gZMcBi gBLcIm"
+      class="sc-gZMcBi cpuhBd"
     >
       <summary
         class="sc-gqjmRU jzrKIJ"
@@ -1022,7 +1022,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-gZMcBi gBLcIm"
+      class="sc-gZMcBi cpuhBd"
     >
       <summary
         class="sc-gqjmRU jzrKIJ"
@@ -1050,7 +1050,7 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-gZMcBi gBLcIm"
+      class="sc-gZMcBi cpuhBd"
     >
       <summary
         class="sc-gqjmRU jzrKIJ"
