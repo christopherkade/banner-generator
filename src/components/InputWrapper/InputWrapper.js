@@ -36,8 +36,8 @@ const Summary = styled.summary`
 `
 
 const InputWrapper = ({ values, setters }) => {
-  const { bgColor, title, titleSize, titleColor, hasBorder } = values
-  const { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder } = setters
+  const { bgColor, title, titleSize, titleColor, borderColor, hasBorder } = values
+  const { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setHasBorder } = setters
 
   return (
     <Wrapper>
@@ -50,6 +50,7 @@ const InputWrapper = ({ values, setters }) => {
         <ColorInput
           bgColor={bgColor} setBgColor={setBgColor}
           titleColor={titleColor} setTitleColor={setTitleColor}
+          borderColor={borderColor} setBorderColor={setBorderColor}
         />
       </Detail>
       <Detail>
@@ -70,6 +71,7 @@ InputWrapper.propTypes = {
     title: PropTypes.string,
     titleSize: PropTypes.string,
     titleColor: PropTypes.string,
+    borderColor: PropTypes.string,
     hasBorder: PropTypes.bool
   }).isRequired,
   setters: PropTypes.shape({
@@ -77,6 +79,7 @@ InputWrapper.propTypes = {
     setTitle: PropTypes.func,
     setTitleSize: PropTypes.func,
     setTitleColor: PropTypes.func,
+    setBorderColor: PropTypes.func,
     setHasBorder: PropTypes.func
   }).isRequired
 }

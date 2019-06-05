@@ -29,7 +29,7 @@ const Label = styled.label`
   font-size: 0.75rem;
 `
 
-const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor }) => {
+const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor, borderColor, setBorderColor }) => {
   return (
     <Wrapper>
       <InputBlock>
@@ -46,6 +46,14 @@ const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor }) => {
           triangle="hide"
           color={titleColor}
           onChangeComplete={(color) => setTitleColor(color.hex)}
+        />
+      </InputBlock>
+      <InputBlock>
+        <Label>Border color</Label>
+        <CompactPicker
+          triangle="hide"
+          color={borderColor}
+          onChangeComplete={(color) => setBorderColor(color.hex)}
         />
       </InputBlock>
     </Wrapper>
