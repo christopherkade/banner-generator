@@ -12,17 +12,19 @@ const useInputs = () => {
   const [title, setTitle] = useState("Hello DEV 🎉")
   const [titleSize, setTitleSize] = useState("5")
   const [titleColor, setTitleColor] = useState("white")
+  const [borderColor, setBorderColor] = useState("white")
   const [hasBorder, setHasBorder] = useState(true)
 
   const randomizeInputs = () => {
     setBgColor(getRandomColor())
     setTitleColor(getRandomColor())
     setHasBorder(Math.random() >= 0.5)
+    setBorderColor(getRandomColor())
   }
 
   return [
-    { bgColor, title, titleSize, titleColor, hasBorder },
-    { setBgColor, setTitle, setTitleSize, setTitleColor, setHasBorder, randomizeInputs }
+    { bgColor, title, titleSize, titleColor, borderColor, hasBorder },
+    { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setHasBorder, randomizeInputs }
   ]
 }
 
