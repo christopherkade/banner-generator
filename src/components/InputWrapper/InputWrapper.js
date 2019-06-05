@@ -5,7 +5,6 @@ import styled from "styled-components"
 import { ContentInput } from "components/InputWrapper/ContentInput"
 import { ColorInput } from "components/InputWrapper/ColorInput"
 import { SizeInput } from "components/InputWrapper/SizeInput"
-import { MiscInput } from "components/InputWrapper/MiscInput"
 
 const Wrapper = styled.div`
   display: flex;
@@ -36,8 +35,8 @@ const Summary = styled.summary`
 `
 
 const InputWrapper = ({ values, setters }) => {
-  const { bgColor, title, titleSize, titleColor, borderColor, hasBorder } = values
-  const { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setHasBorder } = setters
+  const { bgColor, title, titleSize, titleColor, borderColor, borderSize } = values
+  const { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize } = setters
 
   return (
     <Wrapper>
@@ -55,11 +54,7 @@ const InputWrapper = ({ values, setters }) => {
       </Detail>
       <Detail>
         <Summary>Sizes</Summary>
-        <SizeInput titleSize={titleSize} setTitleSize={setTitleSize} />
-      </Detail>
-      <Detail>
-        <Summary>Miscellaneous</Summary>
-        <MiscInput hasBorder={hasBorder} setHasBorder={setHasBorder} />
+        <SizeInput titleSize={titleSize} borderSize={borderSize} setTitleSize={setTitleSize} setBorderSize={setBorderSize} />
       </Detail>
     </Wrapper>
   )

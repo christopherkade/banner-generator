@@ -51,13 +51,8 @@ const App = () => {
   useEffect(() => {
     const output = document.getElementById("capture")
     html2canvas(output, {
-      // Work around
-      // Find a way to have a fixed 1000x420 size without croping out borders or starting with a 10px offset
-      // Certainly related to html2canvas
-      width: 1015,
-      height: 440,
-      x: output.offsetLeft + 2,
-      y: output.offsetTop,
+      width: 1000,
+      height: 420,
       scale: 1
     }).then(canvas => {
       setImgURL(canvas.toDataURL('image/png'))

@@ -22,12 +22,16 @@ const Label = styled.label`
   font-size: 0.75rem;
 `
 
-const SizeInput = ({ titleSize, setTitleSize }) => {
+const SizeInput = ({ titleSize, borderSize, setTitleSize, setBorderSize }) => {
   return (
     <>
       <InputBlock>
         <Label>Title size (in <code>rem</code>)</Label>
         <Input value={titleSize} type="number" min="1" onChange={(e) => setTitleSize(e.target.value)} />
+      </InputBlock>
+      <InputBlock>
+        <Label>Border size (in <code>px</code>)</Label>
+        <Input value={borderSize} type="number" min="0" onChange={(e) => setBorderSize(e.target.value)} />
       </InputBlock>
     </>
   )

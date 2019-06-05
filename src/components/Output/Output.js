@@ -11,7 +11,8 @@ const Wrapper = styled.div`
   align-items: center;
   color: ${(props) => props.titleColor};
   border: 1px solid #dbdbdb;
-  border: ${(props) => props.hasBorder ? `0.625rem solid ${props.borderColor}` : "0.625rem solid transparent"};
+  border: ${(props) => `${props.borderSize}px solid ${props.borderColor}`};
+  box-sizing: border-box;
 
   @media (max-width: 1200px) {
     width: auto;
@@ -25,10 +26,10 @@ const Title = styled.h1`
 `
 
 const Output = ({ values }) => {
-  const { bgColor, title, titleSize, titleColor, borderColor, hasBorder } = values
+  const { bgColor, title, titleSize, titleColor, borderColor, borderSize } = values
 
   return (
-    <Wrapper bgColor={bgColor} titleColor={titleColor} borderColor={borderColor} hasBorder={hasBorder} id="capture">
+    <Wrapper bgColor={bgColor} titleColor={titleColor} borderColor={borderColor} borderSize={borderSize} id="capture">
       <Title size={titleSize}>{title}</Title>
     </Wrapper>
   )

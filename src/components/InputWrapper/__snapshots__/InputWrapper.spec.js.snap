@@ -3,14 +3,14 @@
 exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
 <div>
   <div
-    class="sc-iwsKbI jwlGMD"
+    class="sc-htoDjs kKtqja"
   >
     <details
-      class="sc-gZMcBi cpuhBd"
+      class="sc-dnqmqq iGdcAj"
       open=""
     >
       <summary
-        class="sc-gqjmRU jzrKIJ"
+        class="sc-iwsKbI hPLzFK"
       >
         Content
       </summary>
@@ -29,10 +29,10 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-gZMcBi cpuhBd"
+      class="sc-dnqmqq iGdcAj"
     >
       <summary
-        class="sc-gqjmRU jzrKIJ"
+        class="sc-iwsKbI hPLzFK"
       >
         Colors
       </summary>
@@ -1512,10 +1512,10 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-gZMcBi cpuhBd"
+      class="sc-dnqmqq iGdcAj"
     >
       <summary
-        class="sc-gqjmRU jzrKIJ"
+        class="sc-iwsKbI hPLzFK"
       >
         Sizes
       </summary>
@@ -1538,27 +1538,23 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
           value="5"
         />
       </div>
-    </details>
-    <details
-      class="sc-gZMcBi cpuhBd"
-    >
-      <summary
-        class="sc-gqjmRU jzrKIJ"
-      >
-        Miscellaneous
-      </summary>
       <div
-        class="sc-htoDjs bPBsn"
+        class="sc-bZQynM gfDHHn"
       >
         <label
-          class="sc-dnqmqq jxFfrK"
+          class="sc-gzVnrw ihyYso"
         >
-          Borders
+          Border size (in 
+          <code>
+            px
+          </code>
+          )
         </label>
         <input
           class="sc-bdVaJa eQjeEW"
-          type="checkbox"
-          value="false"
+          min="0"
+          type="number"
+          value=""
         />
       </div>
     </details>

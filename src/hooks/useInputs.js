@@ -13,18 +13,18 @@ const useInputs = () => {
   const [titleSize, setTitleSize] = useState("5")
   const [titleColor, setTitleColor] = useState("white")
   const [borderColor, setBorderColor] = useState("white")
-  const [hasBorder, setHasBorder] = useState(true)
+  const [borderSize, setBorderSize] = useState(0)
 
   const randomizeInputs = () => {
     setBgColor(getRandomColor())
     setTitleColor(getRandomColor())
-    setHasBorder(Math.random() >= 0.5)
+    setBorderSize(Math.floor(Math.random() * 11))
     setBorderColor(getRandomColor())
   }
 
   return [
-    { bgColor, title, titleSize, titleColor, borderColor, hasBorder },
-    { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setHasBorder, randomizeInputs }
+    { bgColor, title, titleSize, titleColor, borderColor, borderSize },
+    { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize, randomizeInputs }
   ]
 }
 
