@@ -4,7 +4,7 @@
 [![Issues](https://img.shields.io/github/issues/christopherkade/banner-generator.svg)](https://github.com/christopherkade/banner-generator/issues)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-A web based [DEV](dev.to) banner generator.
+A web based [DEV](https://dev.to/) banner generator.
 
 ![screenshot](https://user-images.githubusercontent.com/15229355/58760902-6cb86080-853e-11e9-91e2-afb66f77e8cb.png)
 
