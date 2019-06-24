@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   border: ${(props) => `${props.borderSize}px solid ${props.borderColor}`};
   box-sizing: border-box;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1279px) {
     width: auto;
     height: auto;
   }
