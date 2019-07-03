@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import html2canvas from "html2canvas"
 
+import { GithubLink } from "components/GithubLink"
 import { InputWrapper } from "components/InputWrapper"
 import { Output } from "components/Output"
 import { Button } from "components/Buttons/Button"
@@ -12,7 +13,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 
   @media (max-width: 1279px) {
     flex-direction: column;
@@ -49,18 +50,22 @@ const BannerWrapper = () => {
   }, [values])
 
   return (
-    <Wrapper>
-      <Output values={values} />
-      <ActionWrapper>
-        <InputWrapper values={values} setters={setters} />
-        <Button onClick={setters.randomizeInputs}>
-          RANDOMISE
-        </Button>
-        <LinkButton id="download-button" download="banner.png" href={imgURL}>
-          DOWNLOAD BANNER
-        </LinkButton>
-      </ActionWrapper>
-    </Wrapper>
+    <>
+      <GithubLink color={values.bgColor} />
+
+      <Wrapper>
+        <Output values={values} />
+        <ActionWrapper>
+          <InputWrapper values={values} setters={setters} />
+          <Button onClick={setters.randomizeInputs}>
+            RANDOMISE
+          </Button>
+          <LinkButton id="download-button" download="banner.png" href={imgURL}>
+            DOWNLOAD BANNER
+          </LinkButton>
+        </ActionWrapper>
+      </Wrapper>
+    </>
   )
 }
 

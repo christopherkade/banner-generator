@@ -8,15 +8,21 @@ const getRandomColor = () => {
  * Handles our input states & updates
  */
 const useInputs = () => {
-  const [bgColor, setBgColor] = useState("black")
-  const [title, setTitle] = useState("Hello DEV 🎉")
-  const [titleSize, setTitleSize] = useState("5")
+  const [bgColor, setBgColor] = useState("#151513")
+  const [title, setTitle] = useState("DEV banner generator 🎉")
+  const [titleSize, setTitleSize] = useState("4")
   const [titleColor, setTitleColor] = useState("white")
   const [borderColor, setBorderColor] = useState("white")
   const [borderSize, setBorderSize] = useState(0)
 
+  // Updates both the bg color and the website's border colors
+  const randomBgColorChange = (color) => {
+    setBgColor(color)
+    document.body.style.setProperty('--border-color', color)
+  }
+
   const randomizeInputs = () => {
-    setBgColor(getRandomColor())
+    randomBgColorChange(getRandomColor())
     setTitleColor(getRandomColor())
     setBorderSize(Math.floor(Math.random() * 11))
     setBorderColor(getRandomColor())

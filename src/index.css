@@ -1,3 +1,7 @@
+:root {
+  --border-color: #151513;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,13 +10,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #EDEEEF;
+  border-left: 10px solid var(--border-color);
+  border-right: 10px solid var(--border-color);
 }
 
 body, html, #root {
   height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* For our borders, see https://css-tricks.com/body-border/ */
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: var(--border-color);
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+body:before {
+  top: 0;
+}
+
+body:after {
+  bottom: 0;
 }

@@ -30,6 +30,11 @@ const Label = styled.label`
 `
 
 const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor, borderColor, setBorderColor }) => {
+  const handleBgColorChange = ({ hex }) => {
+    setBgColor(hex)
+    document.body.style.setProperty('--border-color', hex)
+  }
+
   return (
     <Wrapper>
       <InputBlock>
@@ -37,7 +42,7 @@ const ColorInput = ({ bgColor, setBgColor, titleColor, setTitleColor, borderColo
         <CompactPicker
           triangle="hide"
           color={bgColor}
-          onChangeComplete={(color) => setBgColor(color.hex)}
+          onChangeComplete={(color) => handleBgColorChange(color)}
         />
       </InputBlock>
       <InputBlock>

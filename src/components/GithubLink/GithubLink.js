@@ -2,9 +2,9 @@ import React from "react"
 
 import "./GithubLink.css"
 
-const GithubLink = () => {
+const GithubLink = ({ color }) => {
   const svgStyle = {
-    fill: "#151513",
+    fill: color,
     color: "#fff",
     position: "absolute",
     top: 0,
