@@ -14,6 +14,7 @@ const useInputs = () => {
   const [titleColor, setTitleColor] = useState("white")
   const [borderColor, setBorderColor] = useState("white")
   const [borderSize, setBorderSize] = useState(0)
+  const [image, setImage] = useState("//:0")
 
   // Updates both the bg color and the website's border colors
   const randomBgColorChange = (color) => {
@@ -29,8 +30,8 @@ const useInputs = () => {
   }
 
   return [
-    { bgColor, title, titleSize, titleColor, borderColor, borderSize },
-    { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize, randomizeInputs }
+    { bgColor, title, titleSize, titleColor, borderColor, borderSize, image },
+    { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize, randomizeInputs, setImage }
   ]
 }
 
