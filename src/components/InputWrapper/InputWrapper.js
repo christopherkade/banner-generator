@@ -5,6 +5,8 @@ import styled from "styled-components"
 import { ContentInput } from "components/InputWrapper/ContentInput"
 import { ColorInput } from "components/InputWrapper/ColorInput"
 import { SizeInput } from "components/InputWrapper/SizeInput"
+import { ImageInput } from "components/InputWrapper/ImageInput"
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -35,8 +37,8 @@ const Summary = styled.summary`
 `
 
 const InputWrapper = ({ values, setters }) => {
-  const { bgColor, title, titleSize, titleColor, borderColor, borderSize } = values
-  const { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize } = setters
+  const { bgColor, title, titleSize, titleColor, borderColor, borderSize, image } = values
+  const { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize, setImage } = setters
 
   return (
     <Wrapper>
@@ -55,6 +57,10 @@ const InputWrapper = ({ values, setters }) => {
       <Detail>
         <Summary>Sizes</Summary>
         <SizeInput titleSize={titleSize} borderSize={borderSize} setTitleSize={setTitleSize} setBorderSize={setBorderSize} />
+      </Detail>
+      <Detail>
+        <Summary>Background Image</Summary>
+        <ImageInput image={image} setImage={setImage}/>
       </Detail>
     </Wrapper>
   )

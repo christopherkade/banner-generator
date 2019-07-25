@@ -3,14 +3,14 @@
 exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
 <div>
   <div
-    class="sc-htoDjs kKtqja"
+    class="sc-dnqmqq jBNPgH"
   >
     <details
-      class="sc-dnqmqq iGdcAj"
+      class="sc-iwsKbI jrDyKB"
       open=""
     >
       <summary
-        class="sc-iwsKbI hPLzFK"
+        class="sc-gZMcBi WtlHs"
       >
         Content
       </summary>
@@ -29,10 +29,10 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-dnqmqq iGdcAj"
+      class="sc-iwsKbI jrDyKB"
     >
       <summary
-        class="sc-iwsKbI hPLzFK"
+        class="sc-gZMcBi WtlHs"
       >
         Colors
       </summary>
@@ -1512,10 +1512,10 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       </div>
     </details>
     <details
-      class="sc-dnqmqq iGdcAj"
+      class="sc-iwsKbI jrDyKB"
     >
       <summary
-        class="sc-iwsKbI hPLzFK"
+        class="sc-gZMcBi WtlHs"
       >
         Sizes
       </summary>
@@ -1556,6 +1556,34 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
           type="number"
           value=""
         />
+      </div>
+    </details>
+    <details
+      class="sc-iwsKbI jrDyKB"
+    >
+      <summary
+        class="sc-gZMcBi WtlHs"
+      >
+        Background Image
+      </summary>
+      <div
+        class="sc-htoDjs eLmeJr"
+      >
+        <div
+          class="dropzone"
+          tabindex="0"
+        >
+          <input
+            autocomplete="off"
+            multiple=""
+            style="display: none;"
+            tabindex="-1"
+            type="file"
+          />
+          <p>
+            Drag 'n' drop some files here, or click to select files
+          </p>
+        </div>
       </div>
     </details>
   </div>

@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   border: 1px solid #dbdbdb;
   border: ${(props) => `${props.borderSize}px solid ${props.borderColor}`};
   box-sizing: border-box;
+  background-image: url(${(props) => props.image});
 
   @media (max-width: 1279px) {
     width: auto;
@@ -26,10 +27,10 @@ const Title = styled.h1`
 `
 
 const Output = ({ values }) => {
-  const { bgColor, title, titleSize, titleColor, borderColor, borderSize } = values
+  const { bgColor, title, titleSize, titleColor, borderColor, borderSize, image } = values
 
   return (
-    <Wrapper bgColor={bgColor} titleColor={titleColor} borderColor={borderColor} borderSize={borderSize} id="capture">
+    <Wrapper bgColor={bgColor} titleColor={titleColor} borderColor={borderColor} borderSize={borderSize} image={image} id="capture">
       <Title size={titleSize}>{title}</Title>
     </Wrapper>
   )
@@ -42,7 +43,8 @@ Output.propTypes = {
     titleSize: PropTypes.string,
     titleColor: PropTypes.string,
     borderColor: PropTypes.string,
-    hasBorder: PropTypes.bool
+    hasBorder: PropTypes.bool,
+    image: PropTypes.string
   }).isRequired
 }
 
