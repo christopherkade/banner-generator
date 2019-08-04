@@ -37,7 +37,7 @@ const Summary = styled.summary`
 `
 
 const InputWrapper = ({ values, setters }) => {
-  const { bgColor, title, titleSize, titleColor, borderColor, borderSize, image } = values
+  const { bgColor, title, titleSize, titleColor, borderColor, borderSize } = values
   const { setBgColor, setTitle, setTitleSize, setTitleColor, setBorderColor, setBorderSize, setImage } = setters
 
   return (
@@ -59,8 +59,8 @@ const InputWrapper = ({ values, setters }) => {
         <SizeInput titleSize={titleSize} borderSize={borderSize} setTitleSize={setTitleSize} setBorderSize={setBorderSize} />
       </Detail>
       <Detail>
-        <Summary>Background Image</Summary>
-        <ImageInput image={image} setImage={setImage}/>
+        <Summary>Background image</Summary>
+        <ImageInput setImage={setImage} />
       </Detail>
     </Wrapper>
   )

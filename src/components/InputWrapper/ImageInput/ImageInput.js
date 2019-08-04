@@ -1,44 +1,42 @@
-import React, {useCallback} from 'react';
+import React, { useCallback } from 'react';
 import styled from "styled-components"
-import {useDropzone} from 'react-dropzone';
+import { useDropzone } from 'react-dropzone';
 
 
-const InputBlock = styled.div`
-  position: relative;
+const ImageDropBlock = styled.div`
   height: 100%;
   display: flex;
-  flex-direction: column;
-  border: 2px dashed;
-  border-radius: 20px;
-  width: 480px;
-  font-family: sans-serif;
-  margin: 40px auto;
-  padding: 20px;
+  justify-content: center;
+  border: 1px dashed;
+  border-radius: 1.25rem;
+  margin: 20px auto;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
-const ImageInput = ({ image, setImage }) => {
-	const onDrop = useCallback(acceptedFiles => {
-      const file = acceptedFiles[0]
-    			let reader = new FileReader();
-  				reader.readAsDataURL(file)
-  				reader.onloadend = () => {
-      				setImage(reader.result)
-   				}  				
-    }, [])
+const ImageInput = ({ setImage }) => {
 
-	const {acceptedFiles, getRootProps, getInputProps} = useDropzone({onDrop});
-	
-	return (
+  const onDrop = useCallback(acceptedFiles => {
+    const file = acceptedFiles[0]
+    const reader = new FileReader()
 
-		<>
-		<InputBlock>
-			<div {...getRootProps({className: 'dropzone'})}>
-           		<input {...getInputProps()} />
-            	<p>Drag 'n' drop some files here, or click to select files</p>
-        	</div>
-		</InputBlock>
-		</>
-	)
+    reader.readAsDataURL(file)
+    reader.onloadend = () => {
+      setImage(reader.result)
+    }
+  }, [setImage])
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop })
+
+  return (
+    <ImageDropBlock {...getRootProps({ className: 'dropzone' })}>
+      <input {...getInputProps()} />
+      <p>Chose a file or drag it here</p>
+    </ImageDropBlock>
+  )
 }
 
 export default ImageInput

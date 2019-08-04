@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   border: ${(props) => `${props.borderSize}px solid ${props.borderColor}`};
   box-sizing: border-box;
   background-image: url(${(props) => props.image});
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: 1279px) {
     width: auto;

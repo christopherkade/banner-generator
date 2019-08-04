@@ -1564,26 +1564,22 @@ exports[`<InputWrappr /> Snapshots should match snapshot 1`] = `
       <summary
         class="sc-gZMcBi WtlHs"
       >
-        Background Image
+        Background image
       </summary>
       <div
-        class="sc-htoDjs eLmeJr"
+        class="dropzone sc-htoDjs jNnmZa"
+        tabindex="0"
       >
-        <div
-          class="dropzone"
-          tabindex="0"
-        >
-          <input
-            autocomplete="off"
-            multiple=""
-            style="display: none;"
-            tabindex="-1"
-            type="file"
-          />
-          <p>
-            Drag 'n' drop some files here, or click to select files
-          </p>
-        </div>
+        <input
+          autocomplete="off"
+          multiple=""
+          style="display: none;"
+          tabindex="-1"
+          type="file"
+        />
+        <p>
+          Chose a file or drag it here
+        </p>
       </div>
     </details>
   </div>
